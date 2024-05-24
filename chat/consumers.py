@@ -1,7 +1,6 @@
-# chat/consumers.py
-
 import json
 from channels.generic.websocket import AsyncWebsocketConsumer
+from .models import Message
 
 class ChatConsumer(AsyncWebsocketConsumer):
     async def connect(self):
