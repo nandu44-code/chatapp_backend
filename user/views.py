@@ -7,7 +7,7 @@ from .serializer import UserRegistrationSerializer
 # Create your views here.
 
 class UserRegistrationViewSet(ModelViewSet):
-    queryset = CustomUser.objects.all()  # Set queryset to all CustomUser objects
+    queryset = CustomUser.objects.all() 
     serializer_class = UserRegistrationSerializer
 
     def create(self, request, *args, **kwargs):
